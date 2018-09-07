@@ -1,0 +1,5 @@
+There are 33 missing texts from the v1.0 release.
+
+29 ASU texts: The ASU texts were drawn from OpenSource.gov, and are currently marked FOUO (For Official Use Only) by the U.S. Government.  Theyhave not yet been approved for release to the general public.  As of this writing (March 2014), we are in the process of seeking permission to release these texts.  When that permission is granted, we will release a new version of the corpus that includes those texts.
+
+4 Inspire texts: When we were preparing the final copy of the paper, and getting ready to submit the data to the archive, we discovered that the final four Inspire texts were missing referent property data.  As of this writing (March 2014) we are in the process of having these finals annotated for that layer.  When that is finished, an updated version of the corpus will be released that includes those texts.

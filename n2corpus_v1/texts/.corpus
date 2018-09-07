@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<representations>
+  <rep id="edu.mit.story.char" required="true">
+    <param editable="false"/>
+    <factory id="edu.mit.story.char.factory.null"/>
+  </rep>
+  <rep id="edu.mit.story.text">
+    <factory id="edu.mit.story.text.factory.default"/>
+  </rep>
+  <rep id="edu.mit.parsing.token">
+    <factory id="edu.mit.parsing.token.factory.default">
+      <param tokenizer="edu.stanford.parser.tokenizer.penn"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.discourse.rep.refexp">
+    <factory id="edu.mit.discourse.rep.refexp.factory.null"/>
+  </rep>
+  <rep id="edu.mit.parsing.colloc">
+    <factory id="edu.mit.parsing.colloc.factory.default">
+      <param detector="edu.mit.parsing.mweDetector.jmweBest"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.parsing.sentence">
+    <factory id="edu.mit.parsing.sentence.factory.default">
+      <param detector="edu.stanford.parser.sentencedetector.stanford"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.semantics.rep.event">
+    <factory id="edu.mit.semantics.rep.event.factory.default"/>
+  </rep>
+  <rep id="edu.mit.semantics.timex3">
+    <factory id="edu.mit.semantics.timex3.factory.null"/>
+  </rep>
+  <rep id="edu.mit.discourse.rep.coref">
+    <factory id="edu.mit.discourse.rep.coref.factory.null"/>
+  </rep>
+  <rep id="edu.mit.discourse.rep.refprop" ver="0.2.0">
+    <factory id="edu.mit.discourse.rep.refprop.factory.null"/>
+  </rep>
+  <rep id="edu.mit.parsing.pos">
+    <factory id="edu.mit.parsing.pos.factory.default">
+      <param tagger="edu.stanford.parser.postagger.leftthree"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.semantics.rep.timelink">
+    <factory id="edu.mit.semantics.rep.timelink.factory.null"/>
+  </rep>
+  <rep id="edu.mit.parsing.parse">
+    <factory id="edu.mit.parsing.parse.factory.default">
+      <param parser="edu.stanford.parser.phraseparser.englishpcfg"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.parsing.stem">
+    <factory id="edu.mit.parsing.stem.factory.default">
+      <param stemmer="edu.mit.wordnet.stemmer.wordnet"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.semantics.semroles">
+    <factory id="edu.mit.semantics.semroles.factory.default">
+      <param semRoleLabeler="edu.mit.semantics.core.genericLabeler"/>
+    </factory>
+  </rep>
+  <rep id="edu.mit.wordnet.sense">
+    <param wordnet="edu.princeton.wordnet.30"/>
+    <factory id="edu.mit.wordnet.sense.factory.default">
+      <param senseTagger="edu.mit.wordnet.senseTagger.flat"/>
+    </factory>
+  </rep>
+</representations>
